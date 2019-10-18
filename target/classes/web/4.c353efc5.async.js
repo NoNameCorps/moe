@@ -1,0 +1,1 @@
+webpackJsonp([4],{zBHw:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var s=t("PJh5"),c=t.n(s),a=t("Vz2w");t.n(a);c.a.locale("zh-cn"),n.default={namespace:"OnlineEduModal",state:{},subscriptions:{setup:function(e){e.dispatch;e.history.listen(function(){})}},effects:{},reducers:{}}}});

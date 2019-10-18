@@ -1,0 +1,1 @@
+webpackJsonp([3],{ufIb:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s=n("PJh5"),c=n.n(s),o=n("Vz2w");n.n(o);c.a.locale("zh-cn"),t.default={namespace:"common",state:{},subscriptions:{setup:function(e){e.dispatch;e.history.listen(function(){})}},effects:{},reducers:{}}}});
