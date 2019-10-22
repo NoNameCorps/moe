@@ -7,7 +7,7 @@
   <groupId>edu.online.military</groupId>
   <artifactId>moe</artifactId>
   <version>1.0-SNAPSHOT</version>
-
+  <packaging>war</packaging>
   <name>moe</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
@@ -69,6 +69,19 @@
       <artifactId>fastjson</artifactId>
       <version>1.1.37</version>
     </dependency>
+      <!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
+      <dependency>
+          <groupId>commons-net</groupId>
+          <artifactId>commons-net</artifactId>
+          <version>3.6</version>
+      </dependency>
+    <!-- https://mvnrepository.com/artifact/com.jfinal/cos -->
+    <dependency>
+      <groupId>com.jfinal</groupId>
+      <artifactId>cos</artifactId>
+      <version>2017.5</version>
+    </dependency>
+
   </dependencies>
 
   <build>
@@ -112,6 +125,15 @@
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>2.6</version>
+          <configuration>
+            <warName>MOE</warName>
+            <webXml>web/WEB-INF/web.xml</webXml>
+            <warSourceDirectory>web</warSourceDirectory>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>

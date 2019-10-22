@@ -7,11 +7,11 @@ import edu.online.military.utils.CommonUtil;
 import java.util.List;
 
 public class PersonInfoDao {
-    public boolean saveInfo(Record student){
-        if(CommonUtil.isBlank(student.get("id"))){
+    public boolean updateInfo(Record student){
+        /*if(CommonUtil.isBlank(student.get("id"))){
             student.set("id",CommonUtil.getUUID());
             return Db.save("student",student);
-        }
+        }*/
         return Db.update("student",student);
     }
 

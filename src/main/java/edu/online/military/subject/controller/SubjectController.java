@@ -2,14 +2,14 @@ package edu.online.military.subject.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.jfinal.plugin.activerecord.Record;
-import edu.online.military.framework.CommonController;
+import edu.online.military.framework.BaseController;
 import edu.online.military.framework.OnlineUserInfo;
 import edu.online.military.subject.service.ISubjectService;
 import edu.online.military.subject.service.impl.SubjectServiceImpl;
 
 import java.util.List;
 
-public class SubjectController extends CommonController {
+public class SubjectController extends BaseController {
     private ISubjectService subjectService = new SubjectServiceImpl();
     public void querySubject() {
         JSONObject params = getFetchReqParams(this.getRequest());

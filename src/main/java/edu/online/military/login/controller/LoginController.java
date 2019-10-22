@@ -2,25 +2,19 @@ package edu.online.military.login.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.jfinal.plugin.activerecord.Record;
-import edu.online.military.framework.CommonController;
+import edu.online.military.framework.BaseController;
 import edu.online.military.framework.OnlineUserInfo;
-import edu.online.military.framework.UserCache;
-import edu.online.military.utils.CommonUtil;
-import edu.online.military.utils.CookieUtil;
 import edu.online.military.login.service.ILoginService;
 import edu.online.military.login.service.impl.LoginServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-import java.util.List;
-import java.util.UUID;
 
 
-public class LoginController extends CommonController {
+public class LoginController extends BaseController {
     private static final Logger log = LoggerFactory.getLogger(LoginController.class);
     private ILoginService loginService = new LoginServiceImpl();
 

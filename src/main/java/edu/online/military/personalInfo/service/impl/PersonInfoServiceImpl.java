@@ -13,9 +13,9 @@ public class PersonInfoServiceImpl implements IPersonInfoService {
     private PersonInfoDao personInfoDao = new PersonInfoDao();
 
     @Override
-    public boolean saveInfo(JSONObject param) {
+    public boolean updateInfo(JSONObject param) {
         Record student = transJSONToRecord(param);
-        return personInfoDao.saveInfo(student);
+        return personInfoDao.updateInfo(student);
     }
 
     @Override

@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface IPersonInfoService {
 
-    boolean saveInfo(JSONObject param);
+    boolean updateInfo(JSONObject param);
 
     Record queryInfo(String cardId);
 
